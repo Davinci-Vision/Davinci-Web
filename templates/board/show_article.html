@@ -1,0 +1,66 @@
+{% extends 'layout/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="breadcaump-area pt--260 pt_md--200 pt_sm--200 pb--160 pb_sm--100 bg_color--18 breadcaump-title-bar breadcaump-title-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcaump-inner text-center">
+                        <div class="breadcrumb-insite">
+                            <div class="header mb--40 text-center">
+                                <h3 class="heading heading-h3 font-32 text-white">{{ article.title }}</h3>
+                                <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
+{#                                    <div class="post-date">{{ article.created_at }}</div>#}
+{#                                    <div class="post-category"><a href="#">{{ article.category.category }}</a></div>#}
+                                    <div class="post-date">CATEGORY: <span class="theme-color">{{ article.category }}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brook-blog-details-area space_dec--100 pt_md--80 pt_sm--80 pb--50">
+        <div class="container">
+            <div class="row mb--15">
+
+                <div class="col-lg-12">
+                    <!-- Start Thumbnail -->
+                    <div class="blog-modern-layout">
+                        <div class="thumbnail mb--60">
+                            <img class="w-100" src="{% if article.custom_image %}{{ article.custom_image.url }}{% else %}{{ article.main_image }}{% endif %}" alt="{{ article.title }}">
+                        </div>
+                    </div>
+                    <!-- End Thumbnail -->
+                </div>
+
+                <div class="col-lg-8 offset-lg-2 offset-md-2 order-1 order-lg-2">
+                    <div class="blog-details-wrapper">
+                        <article class="blog-post blog-modern-layout">
+                            <!-- Start Header -->
+                            <!-- Start Content -->
+                            <div class="content basic-dark2-line-1px pb--50 mb--35">
+                                <div class="inner">
+                                    {{ article.content|safe }}
+                                </div>
+
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+            {% if user.is_authenticated%}
+                <footer class="blog-single-footer entry-footer">
+                        <span class="tags-links">
+                            <a href="{% url 'edit_article'  article.id %}" class="btn btn-secondary" rel="tag">수정</a>
+                            <a href="{% url 'delete_article'  article.id %}" class="btn btn-secondary" rel="tag">삭제</a>
+                        </span>
+                </footer>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

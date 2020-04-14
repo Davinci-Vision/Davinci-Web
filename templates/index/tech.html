@@ -1,0 +1,130 @@
+{% extends 'layout/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+{#    <div class="breadcaump-area pt--260 pt_md--200 pt_sm--200 pb--160 pb_sm--100 bg_color--18 breadcaump-title-bar breadcaump-title-white">#}
+    <div class="breadcaump-area pt--260 pt_lg--200 pt_md--200 pt_sm--160 pb--100 bg_image--2 breadcaump-title-bar breadcaump-title-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcaump-inner text-center">
+                        <div class="breadcrumb-insite">
+                            <div class="header mb--40 text-center">
+                                <h3 class="heading heading-h3 font-32 text-white">DAVINCI TECHNOLOGY</h3>
+                                <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
+                                    <div class="post-date">TECHNOLOGY</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brook-blog-details-area space_dec--100 pt_md--80 pt_sm--80 pb--50">
+        <div class="container">
+            <div class="row mb--85">
+
+                <div class="col-lg-12">
+                    <!-- Start Thumbnail -->
+                    <div class="blog-modern-layout">
+                        <!-- Start Thumbnail -->
+                        <div class="blog-main-quote mb--60 bg_color--2">
+                            <div class="blogquote-inner">
+                                <div class="content">
+                                    <div class="icon mb--35">
+                                        <span class="fa fa-quote-right text-white"></span>
+                                    </div>
+                                    <h3 class="heading heading-h3 font-32 text-white">“AI & BLOCKCHAIN-BASED FINANCIAL PLATFORM”</h3>
+                                    <div class="quote-name mt--25 mb--20">
+                                        <h4 class="heading heading-h4 font-28 text-white">- DAVINCI -</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Content -->
+                    </div>
+                    <!-- End Thumbnail -->
+                </div>
+
+
+                <div class="col-lg-8 offset-lg-2 offset-md-2 order-1 order-lg-2">
+                    <div class="blog-details-wrapper">
+                        <article class="blog-post blog-modern-layout">
+                            <!-- Start Header -->
+
+                            <!-- Start Content -->
+                            <div class="content mb--35">
+                                <div class="inner">
+                                    <h3 class="heading heading-h3 line-height-1-95 wow move-up animate" style="opacity: 0; visibility: visible;">
+                                        {{ _("AI가 운영하는 탈중앙화 블록체인") }}
+                                    </h3>
+                                    <div class="thumbnail wow move-up animate mb--25 mt--15" style="opacity: 0; visibility: visible;">
+                                        <img class="w-100" src="{% static 'img/tech/tech_01.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc mt--45 mb--50">
+                                        <p>
+                                            {{ _("비트코인이 활발히 거래가 되기 시작한 이래로 가장 큰 기술적 과제는 높은 채굴 비용과 전송속도의 한계를 해결하는 것이었습니다. 이를 해결하기 위해 다양한 방법이 제시되었지만 결국 빠른 Transaction 처리를 위해서는 탈중앙화의 가치가 훼손될 수밖에 없었습니다. 속도문제를 해결하여 여러 파생 기술을 만들어내며 발전해 나가고 있는 D-pos방식의 경우에도 소수의 BP들에 의해 블록체인의 운영 방향성을 결정되는 등 애초 기술이 의도했던 완벽한 탈중앙화를 통한 가치 중립적인 화폐 개발이라는 목적에 부합하지 않는다는 문제가 있습니다. 그럼에도 불구하고 점점 더 많아지는 dApp과 새로운 비즈니스 유형에 대응하기 위해서는 누군가에 의한 지속적인 기술 업그레이드가 필요한 것도 사실입니다.") }}
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="inner">
+                                    <h3 class="heading heading-h3 line-height-1-95 wow move-up animate" style="opacity: 0; visibility: visible;">
+                                        {{ _("구조") }}
+                                    </h3>
+                                    <div class="thumbnail wow move-up animate mb--25" style="opacity: 0; visibility: visible;">
+                                        <img class="w-100" src="{% static 'img/tech/tech_02_1.png' %}" alt="">
+                                    </div>
+                                    <div class="desc mt--45 mb--50">
+                                        <p>
+                                            {{ _("기존 D-pos 기반의 메인넷 위에 DAI를 두어 Transaction을 관리하고 유저 사용 패턴을 학습합니다. 이를 위해 총 2가지의 AI Engine이 탑재됩니다.") }}
+                                        </p>
+                                        <p>
+                                            <strong>Client Analysis Engine</strong> : {{ _("각 참여자 및 노드의 성향을 분석하고 감시하여 블록체인의 운영 효율을 늘립니다. 동적으로 사이드 체인의 생성 및 제거에 관여합니다.") }}
+                                        </p>
+                                        <p>
+                                            <strong>AI Cube Learning Engine</strong> : {{ _("각 Transaction의 패턴을 분석 및 학습합니다. 학습된 데이터는 향후 체인의 기술적 업그레이드에 활용 됩니다.") }}
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="inner">
+                                    <h3 class="heading heading-h3 line-height-1-95 wow move-up animate" style="opacity: 0; visibility: visible;">
+                                        {{ _("개발 단계") }}
+                                    </h3>
+                                    <div class="thumbnail wow move-up animate mb--25" style="opacity: 0; visibility: visible;">
+                                        <img class="w-100" src="{% static 'img/tech/steps_1_2_3_kor_03.png' %}" alt="Multipurpose">
+                                    </div>
+                                    <div class="desc mt--45 mb--50">
+                                        <h4>{{ _("1단계 D-pos 기반의 메인넷 런칭") }} </h4>
+                                        <p>
+                                            {{ _("D-pos 기반의 메인넷을 런칭하여 운영 합니다. 이는 안정적인 시장 진입과 향후 DAI 기반 메인넷으로의 업그레이드를 위한 기본 정보를 수집하는 것을 목적으로 하고 있습니다.") }}
+                                        </p>
+                                        <h4>{{ _("2단계 DAI 러닝") }}</h4>
+                                        <p>
+                                            {{ _("런칭된 D-pos 기반의 AI 엔진 위에 DAI 엔진인 Client Analysis Engine과 AI Cube Learning Engine을 순차적으로 적용하여 Machine Learning을 합니다.") }}
+                                        </p>
+                                        <h4>{{ _("3단계 DAI 주도 운영 시스템 런칭") }}</h4>
+                                        <p>
+                                            {{ _("인간의 손을 거치지 않는 완벽한 탈중앙화 운영 시스템을 구축합니다. DAI가 블록체인을 최적의 상태로 관리 및 업그레이드 합니다.") }}
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

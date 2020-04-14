@@ -1,0 +1,27 @@
+# Main ignore
+__pycache__/
+.cache
+.Python
+media/
+.DS_Store
+.DS_STORE
+.env
+.venv/
+venv/
+ENV/
+
+# Production Secret
+davinci_web/secret.py
+*.sqlite3
+migrations/
+db.sqlite3
+*.log
+
+# Translations
+locale/
+*.mo
+*.pot
+
+# IDE
+.idea
+.vscode

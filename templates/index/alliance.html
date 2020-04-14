@@ -1,0 +1,667 @@
+{% extends 'layout/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="breadcaump-area pt--260 pt_lg--200 pt_md--200 pt_sm--160 pb--100 bg_image--3 breadcaump-title-bar breadcaump-title-white">
+{#    <div class="breadcaump-area pt--260 pt_md--200 pt_sm--200 pb--160 pb_sm--100 bg_color--18 breadcaump-title-bar breadcaump-title-white">#}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcaump-inner text-center">
+                        <div class="breadcrumb-insite">
+                            <div class="header mb--40 text-center">
+                                <h3 class="heading heading-h3 font-32 text-white">DAVINCI ALLIANCE</h3>
+                                <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
+                                    <div class="post-date">TEAM & ALLIANCE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brook-blog-details-area pt--80 pt_sm--80 pb--50">
+        <div class="container">
+            <h3>DAVINCI TEAM</h3>
+            <div class="row mb--85">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 mb--60">
+                    <img src="{% static 'img/team/team-1/han0.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 mb--60">
+                    <h4>{{ _("한승재") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _("다빈치재단 공동 설립자/한국대표") }}</li>
+                        <li>{{ _("다빈치재단 부회장") }}</li>
+                        <li>{{ _("연세대학교 졸업") }}</li>
+                        <li>{{ _("前 코스탁상장사 ㈜디지털옵틱 대표이사") }}</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-7 col-md-7 d-sm-inline-block d-none mb--60">
+                    <h4>{{ _("고진석") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _("CIO / 서울대학교 컴퓨터공학과") }}</li>
+                        <li>{{ _("前 아이러브스쿨 기술이사") }}</li>
+                        <li>{{ _("한국 AI 기반 최고 기술자") }}</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 mb--60">
+                    <img src="{% static 'img/team/team-1/go1.jpg' %}" alt="">
+                </div>
+                <div class="d-sm-none col-sm-12 mb--60">
+                    <h4>{{ _("고진석") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _("CIO / 서울대학교 컴퓨터공학과") }}</li>
+                        <li>{{ _("前 아이러브스쿨 기술이사") }}</li>
+                        <li>{{ _("한국 AI 기반 최고 기술자") }}</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 mb--60">
+                    <img src="{% static 'img/team/team-1/jung2.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 mb--60">
+                    <h4>{{ _("정해만") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _("치프 어드바이저") }}</li>
+                        <li>{{ _("동북아경제협력위원회 부위원장") }}</li>
+                        <li>{{ _("자유한국당 부대변인 / 정당인") }}</li>
+                        <li>{{ _("前 여의도연구소 부위원장") }}</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-7 col-md-7 d-sm-inline-block d-none mb--60">
+                    <h4>{{ _("Sheikh Mohammed Bin  Hamad Bin Saif Al Sharqi") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _("Director of Fujairah’s eGovernment (UAE)") }}</li>
+                        <li>{{ _("World Leaders in AI by 2031") }}</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 mb--60">
+                    <img src="{% static 'img/team/team-1/f3.jpg' %}" alt="">
+                </div>
+                <div class="d-sm-none col-sm-12 mb--60">
+                    <h4>{{ _("Sheikh Mohammed Bin  Hamad Bin Saif Al Sharqi") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _("Director of Fujairah’s eGovernment (UAE)") }}</li>
+                        <li>{{ _("World Leaders in AI by 2031") }}</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 mb--60">
+                    <img src="{% static 'img/team/team-1/lee4.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 mb--60">
+                    <h4>{{ _("이금룡") }}</h4>
+                    <ul class="pl--20">
+                        <li>{{ _('인터넷 쇼핑몰 "옥션" 설립자') }}</li>
+                        <li>{{ _("도전과 나눔 이사장") }}</li>
+                        <li>{{ _("코글로닷컴 회장") }}</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_01.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("김시현") }}</h6>
+                            <span class="position">{{ _("CMO / 경희대 졸업") }}
+                                <br>
+                            {{ _("153프로덕션 대표이사") }}
+                                <br>
+                            {{ _("TV 드라마 ‘태양의 후예＇등 대행사") }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_02.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("김호경") }}</h6>
+                            <span class="position">{{ _("CLO/법률전문가") }}
+                            <br>{{ _("前 대한민국 특수부 부장검사") }}
+                            <br>{{ _('법무법인 "올흔" 대표변호사') }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_03.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("함철만") }}</h6>
+                            <span class="position">{{ _("건국대학교 의학박사") }}
+                            <br>{{ _("연세대학교 공학박사") }}
+                            <br>{{ _("前 지식경제부 상근전문위원") }}
+                            <br>{{ _("前 기획재정부 한국수출은행 기술전문위원") }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_04.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("하준") }}</h6>
+                            <span class="position">{{ _("현대그룹 커뮤니케이션 실장") }}
+                                <br>{{ _("현대그룹 전무이사") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_05.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("김석현") }}</h6>
+                            <span class="position">{{ _("골든키 자산운용사 회장") }}
+                                <br>
+                                {{ _("파이낸셜 어드바이저") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_06.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("김정현") }}</h6>
+                            <span class="position">{{ _("스페셜 어드바이저") }}
+                                <br>{{ _("솔리더스 인베스트먼트 회장") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_07.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("Feng GuanLin") }}</h6>
+                            <span class="position">{{ _("Btc.top 파트너 대표") }}
+                                <br>{{ _("KCU Fund 창업자") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_08.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("Zhang Ruo Xi") }}</h6>
+                            <span class="position">{{ _("산요우자본 창업자") }}
+                                <br>{{ _("Hedge Bank 공동설립자") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_09.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("Yue Xiang") }}</h6>
+                            <span class="position">{{ _("상상력재단 Imagination Fund 설립자") }}
+                                <br>{{ _("Okex, Bit-z등 대형 거래소 투자자") }}
+                                <br>{{ _("후오비, ZB 수퍼노드 투자자") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_10.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("Wu Xiang Qing") }}</h6>
+                            <span class="position">
+                                {{ _("링관캐피탈 창업주") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="team team_style--1">
+                        <!-- Image Wrap -->
+                        <div class="image-wrap">
+                            <div class="thumb text-center">
+                                <img src="{% static 'img/team/team-2/team_11.png' %}" alt="" style="max-width: 109px;">
+                            </div>
+                        </div>
+                        <div class="info text-center">
+                            <h6 class="name">{{ _("Will Shaw") }}</h6>
+                            <span class="position">{{ _("Chat game 대표") }}
+                                <br>{{ _("블록체인 게임 산업 전문가") }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <h3>DAVINCI ALLIANCE</h3>
+            <div class="row mb--85">
+
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_13.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_14.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_15.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_16.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_17.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_18.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_19.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_20.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_21.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_22.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_23.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_24.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_25.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_26.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_27.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_28.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_29.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_30.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_31.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_32.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_33.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_34.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_35.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_36.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_37.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_38.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_39.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_40.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_41.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_42.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_43.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_44.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_45.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_46.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_47.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_48.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_49.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_50.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_51.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_52.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_53.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_54.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_55.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_56.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_57.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_58.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_59.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_60.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_61.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_62.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_63.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_64.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_65.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_66.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_67.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_68.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_69.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_70.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_71.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_72.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_73.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_74.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_75.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_76.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_77.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_78.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_79.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_80.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_81.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_82.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_83.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_84.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 pb--20">
+                    <div class="brand">
+                        <img src="{% static 'img/alliance/client_85.png' %}" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

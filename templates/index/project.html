@@ -1,0 +1,122 @@
+{% extends 'layout/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+{#    <div class="breadcaump-area pt--260 pt_md--200 pt_sm--200 pb--160 pb_sm--100 bg_color--18 breadcaump-title-bar breadcaump-title-white">#}
+    <div class="breadcaump-area pt--260 pt_lg--200 pt_md--200 pt_sm--160 pb--100 bg_image--1 breadcaump-title-bar breadcaump-title-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcaump-inner text-center">
+                        <div class="breadcrumb-insite">
+                            <div class="header mb--40 text-center">
+                                <h3 class="heading heading-h3 font-32 text-white">DAVINCI PROJECT</h3>
+                                <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
+                                    <div class="post-date">VISION</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brook-blog-details-area space_dec--100 pt_md--80 pt_sm--80 pb--50">
+        <div class="container">
+            <div class="row mb--85">
+
+                <div class="col-lg-12">
+                    <!-- Start Thumbnail -->
+                    <div class="blog-modern-layout">
+                        <!-- Start Thumbnail -->
+                        <div class="blog-main-quote mb--60 bg_color--2">
+                            <div class="blogquote-inner">
+                                <div class="content">
+                                    <div class="icon mb--35">
+                                        <span class="fa fa-quote-right text-white"></span>
+                                    </div>
+                                    <h3 class="heading heading-h3 font-32 text-white">“DAVINCI IS A NEXT-GENERATION BLOCKCHAIN”</h3>
+                                    <div class="quote-name mt--25 mb--20">
+                                        <h4 class="heading heading-h4 font-28 text-white">- DAVINCI -</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Content -->
+                    </div>
+                    <!-- End Thumbnail -->
+                </div>
+
+
+                <div class="col-lg-8 offset-lg-2 offset-md-2 order-1 order-lg-2">
+                    <div class="blog-details-wrapper">
+                        <article class="blog-post blog-modern-layout">
+                            <!-- Start Header -->
+                            <!-- Start Content -->
+                            <div class="content mb--35">
+                                <div class="inner">
+                                    <h3 class="heading heading-h3 line-height-1-95 wow move-up animate" style="opacity: 0; visibility: visible;">
+                                        DAVINCI Vision
+                                    </h3>
+
+                                    <div class="desc mt--25 mb--50">
+                                        <p>
+                                            {{ _("인터넷의 발전으로 정보의 교환이 빨라지고 이에 따라 비즈니스가 글로벌화 됨에 따라 이전 시대에서는 볼 수 없었던 새로운 형태의 사업이 등장하게 되었습니다. 이를 통해 다양한 기술적 발전이 이루어지고 있지만 유독 각종 규제와 금융만은 시대 변화의 보조를 맞추지 못하고 있습니다. 다빈치는 블록체인 기술을 활용하여, 글로벌 비즈니스의 장벽을 허물고, 새로운 금융질서 구축을 위해 설립되었습니다. 유럽인의 세계관을 유럽 밖으로 확장시켜 주었던 르네상스, 그리고 그 시절을 대표하는 지식인이었던 레오나르도 다빈치처럼, 다빈치 재단은 4차 혁명 시대를 대표하는 그 중심에 설 것 입니다.") }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail wow move-up animate mb--25" style="opacity: 0; visibility: visible;">
+                                    <img class="w-100" src="{% static 'img/project/info_project_01_3.png' %}" alt="">
+                                </div>
+
+                                <!-- Start Blockquote -->
+                                <div class="bk-quote-content">
+
+                                    <blockquote class="brook-quote move-up wow animate" style="opacity: 0; visibility: visible;">
+                                        <h4 class="heading heading-h4 line-height-1-95 wow move-up animate" style="opacity: 0; visibility: visible;">
+                                            {{ _("비즈니스 영역") }}
+                                        </h4>
+                                        <div class="quote-text">
+                                            <br>
+                                            {{ _("다빈치 체인의 활용 영역은 크게 Online, Offline, Infrastructure 로 나눌 수 있습니다. 다빈치 체인의 우월한 기술력으로 삶의 전반에 걸친 다양한 영역에 활용될 수 있습니다.") }}
+                                        </div>
+                                    </blockquote>
+                                </div>
+
+                                <!-- End Blockquote -->
+                                <div class="desc mt--45">
+                                    <h4>{{ _("Online") }}"</h4>
+                                    <img class="w-100 mb--25" src="{% static 'img/project/online_img.png' %}" alt="">
+                                    <p>
+                                        {{ _("불과 10년 전만해도 사람들은 온라인 비즈니스에 가격을 지불하는 것에 익숙하지 않았습니다. 디지털화된 서비스나 콘텐츠는 무료로 사용해도 된다는 인식이 강했죠. 하지만 DRM 기술이 발전과 스마트폰의 등장으로 인해 인식의 변화가 일어났고 현재는 온라인 비즈니스 시장 규모가 전통적인 오프라인 유통 콘텐츠 시장규모를 추월하게 되었습니다.") }}
+                                    </p>
+                                    <p>
+                                        {{ _("하지만 여전히 국가별로 상이한 Payment System은 문제로 남아 있습니다. 게다가 온라인 비즈니스가 복잡해질 수록 참여자들의 수가 늘게 되었고 그들 간의 수익 배분 방법 역시 새로운 문제로 대두 되었습니다. 다빈치 체인은 블록체인 기술을 통해 온라인 비즈니스가 당면한 문제점들을 해결하고자 합니다. 국경제한 없는 편리한 온라인 Payment는 물론, 개발 기여에 따른 공정한 수익 배분까지 다빈치 체인을 통해 온라인 콘텐츠 비즈니스가 한 단계 더 도약할 것 입니다.") }}
+                                    </p>
+                                </div>
+
+                                <div class="desc mt--45">
+                                    <h4>{{ _("Offline") }}</h4>
+                                    <img class="w-100 mb--25" src="{% static 'img/project/offline_img.png' %}" alt="">
+                                    <p>
+                                        {{ _("Cashless가 대두 되면서 다양한 Payment 서비스들이 등장하였습니다. 그러한 서비스들은 편의성 측면에서 상당한 성과를 이루었지만 여전히 로컬 서비스의 한계를 극복하지 못하고 Globalization 측면에서 한계를 보이고 있습니다. 또한 결제 정보의 대기업 독점과 개인 정보 유출이 우려가 있는 등 한계를 가지고 있습니다. 다빈치 재단은 다빈치 코인을 통해 글로벌 범용 Payment System 구축을 목표로 하고 있습니다. 이를 위해 국내외 100여개 이상의 기업들과 제휴를 맺고 그 비전 실현에 다가가고 있습니다.") }}
+                                    </p>
+                                </div>
+                                <div class="desc mt--45">
+                                    <h4>{{ _("Infrastructure") }}</h4>
+                                    <img class="w-100 mb--25" src="{% static 'img/project/infra_img.png' %}" alt="">
+                                    <p>
+                                        {{ _("많은 국가들과 기업에서 효율적인 민원 처리 및 산업 발전을 위해 Digitalization을 필요로 하고 있습니다. 특히 인터넷 및 컴퓨터 활용에서 상대적으로 뒤쳐진 제 3세계국가들에서 인프라구축에 대한 필요성이 더욱 터지고 있습니다. 다빈치 재단은 다빈치 체인을 통해 사회 인프라 확충이 필요한 국가에 블록체인 기반의 전자 시스템을 제공함으로써 사회 발전에 기여하고 있습니다.") }}
+                                    </p>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

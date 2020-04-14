@@ -1,0 +1,316 @@
+{% extends 'layout/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <!-- Start Slider Area -->
+    <div class="revolution-slider-area slider-bg-1 rslide" data-background="#000">
+        <div class="revolution-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="inner pt--290 pb--170 text-center">
+                            <h5 class="heading heading-h5 text-white">THE MOST RELIABLE DIGITAL ASSET</h5>
+                            <div class="bkseparator--15"></div>
+                            <h1 class="heading heading-h1 text-white font-120">DAVINCI <br> PROJECT</h1>
+                            <div class="slider-btn">
+                                <a href="{% url 'static_project' %}">Explore Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="basic-modern-dots white-dots">
+                                <div class="dot first-circle"></div>
+                                <div class="dot second-circle"></div>
+                                <div class="dot third-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Area -->
+
+    <!-- Start About Area -->
+    <div class="brook-about-area pt--130 pb--50 pt_md--80 pt_sm--60 rslide bg-shape" data-background="#000">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-content text-center max-width--990">
+                        <h3 class="heading heading-h3 font-blod text-white letter-spacing-3">
+                            <span class="theme-color">DAVINCI</span> PROJECT
+                        </h3>
+                        <div class="bkseparator--10"></div>
+                        <h4 class="heading heading-h4 line-height-1-62 text-white font-40">
+                            {{ _("다빈치코인은 디지털화된 자산의 권리를 보호하고 안전한 거래를 매개합니다.") }}
+                            <br>
+                            {{ _("현실과 가상 세계를 연결하는 가교로써 디지털 시대의 가장 신뢰할 수 있는 자산입니다.") }}
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt--30">
+
+                <!-- Start Single Icon Boxes -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="icon-box text-center mt--30">
+                        <div class="inner">
+                           <img src="{% static 'img/main/ft0.png' %}" alt="">
+                            <div class="content mt--15">
+                                <h5 class="heading heading-h5">DAI(Decentralized AI)</h5>
+                                <p class="bk_pra">{{ _("다빈치 체인은 AI를 통해 운영 되는 진정한 탈중앙화 블록체인입니다. 다빈치 체인의 토큰 이코노미에 참여하는 참여자들의 행동 패턴을 분석하여 최적화된 솔루션을 제공합니다.") }} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Icon Boxes -->
+
+                <!-- Start Single Icon Boxes -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="icon-box text-center mt--30">
+                        <div class="inner">
+                            <img src="{% static 'img/main/ft1.png' %}" alt="">
+                            <div class="content mt--15">
+                                <h5 class="heading heading-h5">{{ _("확장성") }}</h5>
+                                <p class="bk_pra">{{ _("AI 기반으로 생성된 사이드 체인은 능동적으로 형성됨으로써 전체 메인 체인의 퍼포먼스와 컨센서스를 해치지 않으면서도 각 서비스 별로 최적화된 트랜젝션 관리가 가능합니다.") }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Icon Boxes -->
+
+                <!-- Start Single Icon Boxes -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="icon-box text-center mt--30">
+                        <div class="inner">
+                            <img src="{% static 'img/main/ft2.png' %}" alt="">
+                            <div class="content mt--15">
+                                <h5 class="heading heading-h5">{{ _("안정성") }}</h5>
+                                <p class="bk_pra">{{ _("다빈치 체인의 DAI를 통해 상시 네트워크를 감시하며 특정 구간에 밀집된 트랜잭션을 유동적으로 처리할 수 있게 효율적인 사이드체인 관리로 안정적인 네트워크 유지가 가능합니다.") }}</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Icon Boxes -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End About Area -->
+
+    <!-- Start DAI Area -->
+    <div class="brook-whatdo-area ptb--100 ptb-md--80 ptb-sm--60 bg_color--1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img class="w-100" src="{% static 'img/main/dai_img.jpg' %}" alt="DAI">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt_sm--40 mt_md--40">
+                    <div class="bk-title--default text-left">
+                        <h5 class="heading heading-h5 theme-color wow move-up animate" style="opacity: 0; visibility: visible;">DAVINCI AI</h5>
+                        <div class="bkseparator--30"></div>
+                        <h3 class="heading heading-h3 wow move-up animate" style="opacity: 0; visibility: visible;">
+                            DAI Learning Mechanism
+                        </h3>
+                    </div>
+                    <div class="row">
+
+                        <!-- Start Single -->
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="what-do mt--30">
+                                <div class="content">
+                                    <h5 class="heading heading-h5 wow move-up animate" style="opacity: 0; visibility: visible;">Technologies</h5>
+                                    <div class="bkseparator--20"></div>
+                                    <p class="bk_pra wow move-up animate" style="opacity: 0; visibility: visible;">
+                                        {{ _("신뢰 기반 AI 엔진인 DAI를 이용 노드들의 행동 패턴을 분석하여 dApp의 서비스 상황에 따른 최적의 노드 네트워크를 구성함으로써 최고의 퍼포먼스를 제공합니다.") }}
+                                        {{ _("특히 사용자 데이터가 쌓일 수록 진화하는 특징을 가지고 있습니다.") }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single -->
+
+                        <!-- Start Single -->
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="what-do mt--30">
+                                <div class="content">
+                                    <h5 class="heading heading-h5 wow move-up animate" style="opacity: 0; visibility: visible;">Business Area</h5>
+                                    <div class="bkseparator--20"></div>
+                                    <p class="bk_pra wow move-up animate" style="opacity: 0; visibility: visible;">
+                                        {{ _("다빈치 체인의 활용 영역은 크게 Online, Offline, Infrastructure 로 나눌 수 있습니다.") }}
+                                        {{ _("다빈치 체인의 우월한 기술력으로 삶의 전반에 걸친 다양한 영역에 활용될 수 있습니다.") }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End DAI Area -->
+
+    <!-- Start Alliance Area -->
+    <div class="brook-brand-area rslide bg-shape ptb--90 ptb-md--80 ptb-sm--60" data-background="#000">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brook-section-title mb--40 text-center">
+                        <h3 class="heading heading-h3 font-blod text-white letter-spacing-3"><span class="theme-color">DAVINCI</span> ALLIANCE</h3>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="social-clint">
+
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_01.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_02.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_03.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_04.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_05.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_06.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_07.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+                        <!-- Start Single Grid -->
+                        <div class="clint-grid">
+                            <div class="grid-inner">
+                                <div class="inner">
+                                    <img src="{% static 'img/main/partner_img/partner_logo_08.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Grid -->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Alliance Area -->
+
+    <!-- Start Projects -->
+    <div class="brook-call-to-action bg_image--8 ptb--70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="call-content text-center text-sm-left">
+                        <h4 class="heading heading-h4 text-white wow move-up animate" style="opacity: 0; visibility: visible;">
+                            {{ _("다빈치 프로젝트는 국내외 국가간의 교류를 민간차원의 네트워크로 활성화 시키고 이 안에서 다양한 분야의 기반을 포함하는 생태계를 구성하기 위해 시작되었습니다.") }}
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="call-btn text-center text-sm-right mt_mobile--20 wow move-up animate" style="opacity: 0; visibility: visible;">
+                        <a class="brook-btn bk-btn-theme btn-sd-size btn-rounded" href="{% url 'static_project' %}">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Projects -->
+
+    <!-- Start News Grid Area -->
+    <div class="bk-blog-grid-area pt--70 pb--180 pt_md--80 pt_sm--60 bg-shape rslide" data-background="#000">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brook-section-title mb--15 text-center">
+                        <h3 class="heading heading-h3 font-blod text-white letter-spacing-3"><span class="theme-color">DAVINCI</span> MEDIA</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for each in lists %}
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 move-up wow mt--30 animate" style="opacity: 0; visibility: visible;">
+                        <div class="blog-grid">
+                            <div class="post-thumb" style="height: 270px;">
+                                <a href="{% url 'show_article' each.id %}" style="max-height: 270px;">
+                                    <img src="{% if each.custom_image %}{{ each.custom_image.url }}{% else %}{{ each.main_image }}{% endif %}" alt="{{ each.title }}">
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-inner">
+                                    <h5 class="heading heading-h5">
+                                        <a href="{% url 'show_article' each.id %}">
+                                            {{ each.title|truncatechars_html:45 }}
+                                        </a>
+                                    </h5>
+                                    <div class="post-meta">
+{#                                        <div class="post-date">{{ each.created_at }}</div>#}
+{#                                        <div class="post-category"><a href="#">{{ each.category }}</a></div>#}
+                                        <div class="post-date">CATEGORY: <span class="theme-color">{{ each.category }}</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Grid Area -->
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!-- Start Whitepaper Area -->
+<div class="brook-call-to-action bg_image--9 ptb--120 ptb-md--80 ptb-sm--60" data-overlay="2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-12">
+                <div class="call-content vertical-call-toaction text-center">
+                    <h3 class="heading heading-h3 pb--30 text-white">WHITEPAPER</h3>
+                    <p class="bk_pra"></p>
+                    {% for each in download %}
+                <a class="brook-btn bk-btn-white text-theme btn-sd-size btn-rounded" href="{{ each.files.url }}">
+                        (
+                        {% if each.lang_type == "1eng" %}
+                            ENG
+                        {% elif each.lang_type == "2kr" %}
+                            KOR
+                        {% elif each.lang_type == "3ch" %}
+                            CHN
+                        {% else %}
+                            JP
+                        {% endif %}
+                        )
+                        Whitepaper
+                    </a>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Whitepaper Area -->

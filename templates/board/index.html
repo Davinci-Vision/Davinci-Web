@@ -1,0 +1,70 @@
+{% extends 'layout/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+{#    <div class="breadcaump-area pt--400 pt_lg--300 pt_md--250 pt_sm--200 pb--100 bg_image--10 breadcaump-title-bar breadcaump-title-white">#}
+    <div class="breadcaump-area pt--260 pt_lg--200 pt_md--200 pt_sm--160 pb--100 bg_image--4 breadcaump-title-bar breadcaump-title-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcaump-inner text-center">
+                        <div class="breadcrumb-insite">
+                            <div class="header mb--40 text-center">
+                                <h3 class="heading heading-h3 font-32 text-white">DAVINCI MEDIA</h3>
+                                <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
+                                    <div class="post-date">MEDIA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bk-blog-grid-area pt--70 pb--100 pt_md--80 pb_md--80 pb_sm--80 pt_sm--60 bg_color--5">
+        <div class="container">
+            {% if user.is_authenticated%}
+                <a href="{% url 'new_article' %}" rel="tag" class="btn btn-secondary">글쓰기</a>
+            {% endif %}
+            <div class="row">
+                {% for each in lists %}
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 move-up wow mt--30 animate" style="opacity: 0; visibility: visible;">
+                        <div class="blog-grid">
+                            <div class="post-thumb" style="height: 270px;">
+                                <a href="{% url 'show_article' each.id %}" style="max-height: 270px;">
+                                    <img src="{% if each.custom_image %}{{ each.custom_image.url }}{% else %}{{ each.main_image }}{% endif %}" alt="{{ each.title }}">
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-inner">
+                                    <h5 class="heading heading-h5">
+                                        <a href="{% url 'show_article' each.id %}">
+                                            {{ each.title|truncatechars_html:45 }}
+                                        </a>
+                                    </h5>
+                                    <div class="post-meta">
+{#                                        <div class="post-date"></div>#}
+                                        <div class="post-date">CATEGORY: <span class="theme-color">{{ each.category }}</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+{#            <div class="row">#}
+{#                <div class="col-lg-12">#}
+{#                    <div class="brook-pagination-wrapper text-center pt--80">#}
+{#                        <ul class="brook-pagination">#}
+{#                            <li class="active"><a href="#">1</a></li>#}
+{#                            <li><a href="#">2</a></li>#}
+{#                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+        </div>
+    </div>
+{% endblock %}
